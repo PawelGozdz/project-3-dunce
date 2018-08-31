@@ -91,24 +91,26 @@
   }
 
   &__icon {
-    height: 5.5rem;
-    width: 5.5rem;
+    height: 4rem;
+    width: 4rem;
     align-self: center;
 
     @media only screen and (max-width: $bp-largest) {
-      height: 35px;
-      width: 35px;
+      height: 2.9rem;
+      width: 2.9rem;
     }
   }
 
   &__text {
     font-family: 'Amatic SC', cursive, 'sans-serif';
-    font-size: 2rem;
-    word-spacing: 2px;
-    font-weight: 400;
+    font-size: 1.75rem;
+
+    @media only screen and (max-width: $bp-largest) {
+      font-size: 1.65rem;
+    }
 
     @media only screen and (max-width: $bp-medium) {
-      font-size: 27px;
+      font-size: 1.5rem;
       text-align: center;
       text-align: justify;
     }

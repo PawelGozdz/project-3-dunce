@@ -29,7 +29,7 @@ body {
   line-height: 1.7; }
 
 .heading-secondary {
-  font-size: 4.5rem;
+  font-size: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,24 +42,32 @@ body {
   color: transparent; }
   @media only screen and (max-width: 1200px) {
     .heading-secondary {
-      font-size: 35px; } }
+      font-size: 2.75rem; } }
   @media only screen and (max-width: 992px) {
     .heading-secondary {
-      font-size: 30px; } }
+      font-size: 2.2rem;
+      text-align: center;
+      padding: .4rem 0; } }
 
 .heading-secondary-1 {
-  font-size: 3rem;
-  padding-top: .5rem;
+  font-size: 2.8rem;
+  margin-top: .7rem;
   align-self: center;
   text-align: center; }
   @media only screen and (max-width: 1200px) {
     .heading-secondary-1 {
-      font-size: 25px;
+      font-size: 2.3rem;
       padding-top: 4px; } }
   @media only screen and (max-width: 992px) {
     .heading-secondary-1 {
-      font-size: 20px;
+      font-size: 1.8rem;
       padding-top: 3px; } }
+  @media only screen and (max-width: 728px) {
+    .heading-secondary-1 {
+      font-size: 1.6rem; } }
+  @media only screen and (max-width: 540px) {
+    .heading-secondary-1 {
+      font-size: 1.4rem; } }
 
 .read-more {
   font-size: 1.3rem;
@@ -1736,21 +1744,22 @@ body {
         .info__col--2 .info__tags span:hover, .info__col--4 .info__tags span:hover, .info__col--6 .info__tags span:hover, .info__col--8 .info__tags span:hover, .info__col--9 .info__tags span:hover {
           outline: 1px solid #1F6F78; }
   .info__icon {
-    height: 5.5rem;
-    width: 5.5rem;
+    height: 4rem;
+    width: 4rem;
     align-self: center; }
     @media only screen and (max-width: 1200px) {
       .info__icon {
-        height: 35px;
-        width: 35px; } }
+        height: 2.9rem;
+        width: 2.9rem; } }
   .info__text {
     font-family: 'Amatic SC', cursive, 'sans-serif';
-    font-size: 2rem;
-    word-spacing: 2px;
-    font-weight: 400; }
+    font-size: 1.75rem; }
+    @media only screen and (max-width: 1200px) {
+      .info__text {
+        font-size: 1.65rem; } }
     @media only screen and (max-width: 728px) {
       .info__text {
-        font-size: 27px;
+        font-size: 1.5rem;
         text-align: center;
         text-align: justify; } }
   .info__tags {

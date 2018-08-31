@@ -19,10 +19,7 @@
 }
 
 .photos {
-  //height: 59rem;
   min-height: 50rem;
-  //max-height: 80rem;
-  //margin-bottom: 10rem;
 
   @media only screen and (max-width: $bp-large) {
     min-height: 400px;

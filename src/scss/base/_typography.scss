@@ -5,7 +5,7 @@ body {
 }
 
 .heading-secondary {
-  font-size: 4.5rem;
+  font-size: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,29 +16,40 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-
+  
   @media only screen and (max-width: $bp-largest) {
-    font-size: 35px;
+    font-size: 2.75rem;
   }
-
+  
   @media only screen and (max-width: $bp-large) {
-    font-size: 30px;
+    font-size: 2.2rem;
+    text-align: center;
+    padding: .4rem 0;
   }
 }
 
 .heading-secondary-1 {
-  font-size: 3rem;
-  padding-top: .5rem;
+  font-size: 2.8rem;
+  margin-top: .7rem;
   align-self: center;
   text-align: center;
 
   @media only screen and (max-width: $bp-largest) {
-    font-size: 25px;
+    font-size: 2.3rem;
     padding-top: 4px;
   }
 
   @media only screen and (max-width: $bp-large) {
-    font-size: 20px;
+    font-size: 1.8rem;
     padding-top: 3px;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 1.6rem; 
+    
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 1.4rem; 
   }
 }

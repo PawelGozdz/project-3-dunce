@@ -58,7 +58,6 @@
     }
 
     // ::before as the little arrow on the top of the dropdown
-    //@include dropdown-arrow--down(rgba($color-grey-light, .6));
     @include shadow-no-click;
 
     & .navbar__link {
@@ -461,54 +460,6 @@
   17% {transform: translateY(100%);opacity:0;}
   100% {transform: translateY(100%);opacity:0;}
 }
-// @keyframes scroll-2 {
-//   0% {transform: translateY(-150%); opacity:0;}
-//   10% {transform: translateY(-50%); opacity:1;}
-//   17% {transform: translateY(80%); opacity:0;}
-//   100% {transform: translateY(100%);opacity:0;}
-// }
-// @keyframes scroll-3 {
-//   0% {transform: translateY(-150%); opacity:0;}
-//   10% {transform: translateY(-50%); opacity:1;}
-//   17% {transform: translateY(80%); opacity:0;}
-//   100% {transform: translateY(100%);opacity:0;}
-// }
-// @keyframes scroll-4 {
-//   0% {transform: translateY(-150%); opacity:0;}
-//   10% {transform: translateY(-50%); opacity:1;}
-//   17% {transform: translateY(80%); opacity:0;}
-//   100% {transform: translateY(100%);opacity:0;}
-// }
-// @keyframes scroll-5 {
-//   0% {transform: translateY(-150%); opacity:0;}
-//   10% {transform: translateY(-50%); opacity:1;}
-//   17% {transform: translateY(80%); opacity:0;}
-//   100% {transform: translateY(100%);opacity:0;}
-// }
-// @keyframes scroll-6 {
-//   0% {transform: translateY(-150%); opacity:0;}
-//   10% {transform: translateY(-50%); opacity:1;}
-//   17% {transform: translateY(80%); opacity:0;}
-//   100% {transform: translateY(100%);opacity:0;}
-// }
-// @keyframes scroll-7 {
-//   0% {transform: translateY(-150%); opacity:0;}
-//   10% {transform: translateY(-50%); opacity:1;}
-//   17% {transform: translateY(80%); opacity:0;}
-//   100% {transform: translateY(100%);opacity:0;}
-// }
-// @keyframes scroll-8 {
-//   0% {transform: translateY(-150%); opacity:0;}
-//   10% {transform: translateY(-50%); opacity:1;}
-//   17% {transform: translateY(80%); opacity:0;}
-//   100% {transform: translateY(100%);opacity:0;}
-// }
-// @keyframes scroll-9 {
-//   0% {transform: translateY(-150%); opacity:0;}
-//   10% {transform: translateY(-50%); opacity:1;}
-//   17% {transform: translateY(80%); opacity:0;}
-//   100% {transform: translateY(100%);opacity:0;}
-// }
 
 .cart-icon {
   height: 3.5rem;
@@ -519,10 +470,6 @@
     height: 30px;
     width: 25px;
   }
-
-  // @media only screen and (max-width: $bp-medium) {
-  //   display: none;
-  // }
 }
 
 .basket {
