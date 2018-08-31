@@ -1,0 +1,45 @@
+.info {
+  height: auto;
+  width: 100%;
+  padding-bottom: 10rem;
+  
+  @media only screen and (max-width: $bp-largest) {
+    padding-bottom: 75px;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    padding-bottom: 50px;
+  }
+}
+
+.choose {
+  padding-bottom: 5rem;
+  height: auto;
+  
+}
+
+.photos {
+  //height: 59rem;
+  min-height: 50rem;
+  //max-height: 80rem;
+  //margin-bottom: 10rem;
+
+  @media only screen and (max-width: $bp-large) {
+    min-height: 400px;
+  }
+  
+}
+
+.testimonials {
+  min-height: 60rem;
+  margin-bottom: 5rem;
+
+  @media only screen and (max-width: $bp-largest) {
+    margin-bottom: 50px;
+  }
+}
+
+
+.footer-main {
+  min-height: 30rem;
+}

@@ -1,0 +1,121 @@
+.footer-main {
+  background-image: linear-gradient(to bottom, $color-white, rgba($color-grey-light, .75) 75%);
+
+  header {
+    font-size: 2rem;
+    color: $color-quaternary;
+  }
+
+  h2 {
+    margin-bottom: 2rem;
+  }
+
+  &__links,
+  &__boxes {
+    margin: 1rem;
+    margin-left: 2rem;
+  }
+
+  &__links {
+    margin: 1rem 3.5rem;
+  }
+
+  &__column {
+    padding: 1rem;
+    flex: 20%;
+    border-left: 1px solid $color-grey-medium;
+  }
+
+  &__link {
+    color: #1F6F78;
+    font-size: 1.3rem;
+    margin-right: 3px;
+  }
+
+  .testimonials__city {
+    animation: flash 1.8s cubic-bezier(.66,.01,.33,1.02) infinite;
+    padding: 2px 5px;
+  }
+
+  @keyframes flash {
+    0% {
+      background-color: $color-secondary;
+    }
+    50% {
+      background-color: $color-quaternary;
+    }
+  }
+
+  .social-media {
+    background-color: $color-quaternary;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  &__icon {
+    height: 6rem;
+    width: 6rem;
+    margin: 8px 5px;
+    fill: rgba($color-grey-light, .75);
+
+    @media only screen and (max-width: $bp-medium) {
+      height: 4rem;
+      width: 4rem;
+      margin: 6px 2px;
+    }
+
+    &:hover {
+      fill: rgba($color-grey-light, .95);
+    }
+  }
+
+  &__boxes {
+    display: flex;
+    flex-wrap: wrap;
+
+    i {
+      margin-right: 1rem;
+    }
+  }
+
+  &__box {
+
+    flex: 50%;
+
+   header + p{
+     margin-top: 1rem;
+   }
+
+    &--tags {
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-top: 1.5rem;
+
+      @media only screen and (max-width: $bp-large) {
+        margin-top: 0;
+      }
+
+      & > :nth-child(1) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  &__tags {
+
+    @extend .footer-main__link;
+    border-radius: 4px;
+    display: inline-block;
+    border: 2px solid $color-quaternary;
+    padding: .2rem;
+    margin: .2rem;
+    transition: all .15s ease-in-out;
+    
+    &:hover {
+      box-shadow: 2px 2px 8px $color-quaternary;
+      background-color: $color-quaternary;
+      color: $color-white;
+    }
+  }
+}

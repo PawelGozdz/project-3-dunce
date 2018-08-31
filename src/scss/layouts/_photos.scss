@@ -1,0 +1,305 @@
+.photos {
+  position: relative;
+  overflow: hidden;
+
+  .heading-secondary {
+    padding: 0 0 2rem 0;
+
+    @media only screen and (max-width: $bp-largest) {
+      padding: 0 0 6px 0;
+    }
+  }
+
+  &__cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba($color-grey-light, .9);
+    z-index: 1;
+
+    .container {
+      margin-top: -6rem;
+      
+      @media only screen and (max-width: $bp-large) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+    align-self: center;
+    height: 70rem;
+    flex-direction: column;
+
+    @media only screen and (max-width: $bp-largest) {
+      height: 600px;
+    }
+  }  
+
+  .cover {
+  
+    &__block {
+    display: flex;
+    height: 40rem;
+    border-radius: 3px;
+    margin-top: 6rem;
+    
+
+    @media only screen and (max-width: $bp-largest) {
+      margin-top: 40px;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      margin-top: 30px;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      flex-direction: column;
+      height: auto;
+    }
+
+    .photos__desc {
+      width: 100%;
+
+      @media only screen and (max-width: $bp-small) {
+        flex-direction: column;
+        height: auto;
+      }
+    }
+  
+      &--form {
+        flex-direction: column;
+        flex: 100%;
+      }
+      &--desc {
+        flex: 100%;
+        
+      }
+    }
+  }
+
+  &__pic-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 60%;
+    height: 120%;
+    margin-top: -5%;
+    padding: 1rem;
+    border: 3px solid $color-quaternary;
+    overflow: hidden;
+    border-radius: 2px;
+
+    @include shadow-search;
+
+    @media only screen and (max-width: $bp-large) {
+      height: 100%;
+      margin-top: 0;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      display: none;
+    }
+
+  }
+  //photos for each box
+  .photos__small {
+    flex: 33.3334%;
+  }
+
+  @for $i from 1 through 12 {
+    .photos__small--#{$i} {
+      background-image: url('../img/pictures-book-' + $i + '-small.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  &__small--1,
+  &__small--6,
+  &__small--7,
+  &__small--12 {
+    transform: scale(1.45);
+    padding: 1rem;
+    border: 2px solid $color-quaternary;
+    filter: contrast(120%);
+  }
+
+  &__desc {
+    flex:0 0 37%;
+    margin-left: auto;
+    background-color: rgba($color-white, .6);
+    padding: 1rem .5rem 1rem;
+    border-radius: 2px;
+  }
+  
+  .desc__heading {
+    text-align: center;
+    font-size:3.5rem;
+    padding-top: .5rem;
+    padding-left: 1rem;
+    background-image: linear-gradient(to right, rgba($color-secondary, .6) 30%, rgba($color-quaternary, .6) 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    @media only screen and (max-width: $bp-largest) {
+      font-size: 28px;
+    }
+  }
+
+  .desc__list {
+    border-left: 2px solid $color-grey-medium;
+    margin: 1rem;
+    padding: 0 1rem;
+    background-color: rgba($color-grey-medium, .3);
+
+    @media only screen and (max-width: $bp-largest) {
+      margin: 8px;
+    }
+  }
+
+  .desc__item {
+    color: $color-quaternary;
+    font-size: 1.3rem;
+    position: relative;
+
+    @media only screen and (max-width: $bp-largest) {
+      font-size: 12px;
+    }
+    @media only screen and (max-width: $bp-large) {
+      font-size: 13px;
+    }
+    
+    &:not(:last-child) {
+      margin-bottom: 7px;
+    }
+
+    .form__number {
+      top: -.5rem;;
+      left: -2.8rem;
+    }
+  }
+
+}
+
+//background images in photos section
+@for $i from 1 through 8 {
+  .photos__box--#{$i} {
+    background-image: url('../img/Theme-' + $i + '-small.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 50%;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba($color-white, .6);
+  padding: 1rem .5rem 1rem;
+  margin-top: -.5rem;
+  flex: 1;
+  border-radius: 2px;
+  
+
+  &__heading {
+    text-align: center;
+    font-size:3.5rem;
+    color: $color-white;
+    padding-top: 1rem;
+    background-image: linear-gradient(to right, rgba($color-secondary, .6) 30%, rgba($color-quaternary, .6) 80%);
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+
+    @media only screen and (max-width: $bp-largest) {
+      font-size: 30px;
+      padding-top: 8px;
+    }
+
+    & span {
+      display: block;
+      font-size: 1.5rem;
+      padding: 1rem 0 1rem;
+    }
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 1rem;
+    background-color: rgba($color-grey-medium, .3);
+    margin: .85rem 1rem;
+    border-radius: 3px;
+  }
+
+  &__sub-group {
+    display: flex;
+    
+    &:nth-child(3) {
+      margin-top: 1rem;
+    }
+  }
+
+  &__number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $color-white;
+    position: absolute;
+    top: -.8rem;
+    left: -.8rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    background: $color-quaternary;
+    border-radius: 50%;
+  }
+
+  &__label {
+    color: $color-quaternary;
+    font-size: 2rem;
+
+    @media only screen and (max-width: $bp-largest) {
+      font-size: 16px;
+    }
+  }
+
+  &__input,
+  &__textarea {
+    font-size: 1rem;
+    color: $color-quaternary;
+    width: 18rem;
+    margin-left: auto;
+    background-color: rgba($color-grey-light, .2);
+    border-bottom: 3px solid $color-grey-light;
+    border-left: 3px solid $color-quaternary;
+    padding-left: 5px;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+
+    @media only screen and (max-width: $bp-large) {
+      width: 80%;
+    }
+
+
+    &:active,
+    &:focus,
+    &:hover {
+      font-size: 1.1rem;
+      background-color: rgba($color-white, .6);
+      border-bottom: 3px solid $color-quaternary;
+      border-left: 3px solid $color-quaternary;
+      transform: scale(1);
+    }
+  }
+
+  &__textarea {
+    flex: 1;
+  }
+}

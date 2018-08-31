@@ -1,0 +1,22 @@
+
+@import 'abstracts/_mixins';
+@import 'abstracts/_variables';
+
+@import 'base/_base';
+@import 'base/_typography'; 
+
+@import 'components/_buttons';  
+@import 'components/_card'; 
+@import 'components/_dropdown';
+@import 'components/_img';
+
+@import 'layouts/_choose';
+@import 'layouts/_footer';
+@import 'layouts/_header';
+@import 'layouts/_info';
+@import 'layouts/_navigation';
+@import 'layouts/_photos';
+@import 'layouts/_testimonials';
+
+@import 'pages/_home';
+  

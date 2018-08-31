@@ -1,0 +1,92 @@
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color:transparent;
+  padding: 3rem 0;
+  transform: scale(1);
+  text-align: center;
+  
+
+  @media only screen and (max-width: $bp-medium) {
+    display: none;
+  }
+
+  // single card
+  &__unit {
+    position: relative;
+    height: 15rem;
+    width: 10rem;
+    border: 1px solid $color-grey-medium;
+    border-radius: 4px;
+    margin: 1rem 1.5rem;
+    padding: 2rem 1rem;
+    outline: thin ridge $color-quaternary;
+    outline-offset: -8px;
+
+    box-shadow:inset -10px -10px 50px $color-grey-dark,
+              inset 10px 10px 50px $color-grey-dark;
+
+    @media only screen and (max-width: $bp-large) {
+      height: 130px;
+      width: 85px;
+      margin: 7px 11px;
+    }
+
+    // background flash light
+    &::before {
+      content: "";
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: transparent;
+      box-shadow: 80px 0 160px $color-white,
+                  -80px 0 160px $color-white,
+                  0 -130px 160px $color-white,
+                  0 130px 160px $color-white;
+      z-index: -1;
+    }       
+
+    &:hover {
+      animation: cards-scale 1s 1 ease forwards;
+      z-index: 100;
+     }
+     
+    // changing inset shadow and size of the card
+    @keyframes cards-scale {
+      0% {
+        transform: scale(1);
+        box-shadow:inset -10px -10px 50px $color-grey-dark,
+              inset 10px 10px 30px $color-grey-dark;
+      }
+      100% {
+        transform: scale(1.7);
+        box-shadow:inset 0 0 30px $color-grey-dark,
+              inset 0 0 3px $color-grey-dark;
+      }
+    }
+
+    h4 {
+      margin-bottom: 1.5rem;
+      background-color: $color-quaternary;
+      color: #fff;
+      outline: thin ridge $color-quaternary;
+      outline-offset: 7px;
+
+      @media only screen and (max-width: $bp-large) {
+        margin-bottom: .75rem;
+        outline-offset: 4px;
+      }
+    }
+
+    span {
+      background-color: rgba($color-quaternary, .3);
+      padding: 3px;
+
+    }
+  }
+}

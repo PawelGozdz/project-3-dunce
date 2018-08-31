@@ -1,0 +1,155 @@
+.testimonials {
+  background-image: linear-gradient(to bottom, rgba($color-grey-light, .75) 75%, $color-white);
+  padding-top: 5rem;
+  color: $color-quaternary;
+
+  @media only screen and (max-width: $bp-largest) {
+    padding-top: 30px;
+  }
+
+  .heading-secondary {
+    margin-bottom: 4rem;
+
+    @media only screen and (max-width: $bp-largest) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__boxes {
+    height: 50rem;
+    display: flex;
+    flex-wrap: wrap;
+
+    @media only screen and (max-width: $bp-largest) {
+      height: 400px;
+    }
+    
+    &--double {
+      .heading-secondary-1 {
+        color: $color-quaternary;
+        display: flex;
+        flex: 0 1 30%;
+        padding: 1rem 1.5rem;
+        
+      }
+      span {
+        color: $color-quaternary;
+        font-size: 2.2rem;
+        letter-spacing: 3px;
+        display: flex;
+        align-self: center;
+        flex: 1;
+
+      }
+    }
+
+    &--double ul li:nth-child(4n+3) {
+      background: $color-tertiary;
+      color: $color-white;
+    }
+  }
+
+  &__box {
+    border: 2px solid $color-quaternary;
+    position: relative;
+    margin: .5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2px;
+    min-height: 48%;
+    width: 100%;
+
+    @include shadow-no-click;
+
+    @media only screen and (max-width: $bp-largest) {
+      margin: 4px;
+      padding: 8px;
+    }
+  }
+
+  &__text {
+    font-size: 1.8rem;
+
+    @media only screen and (max-width: $bp-largest) {
+      font-size: 14px;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      // font-size: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 1.5rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__name {
+    margin-top: auto;
+    align-self: flex-start;
+    font-size: 1.2rem;
+    border: 1px solid $color-quaternary;
+    padding: .2rem .5rem;
+  }
+
+  &__city {
+    background: $color-tertiary;
+    color: $color-white;
+    font-weight: 600;
+    padding: .1rem .2rem;
+    margin-left: .3rem;
+  }
+
+  &__img {
+    position: absolute;
+    top: 48%;
+    left: 3.5%;
+    width: 14rem;
+    height: 7rem;
+    border: 2px solid $color-quaternary;
+ 
+    
+    @media only screen and (max-width: $bp-largest) {
+      top: 42%;
+    }
+    
+    
+    @media only screen and (max-width: $bp-large) {
+      top: 40%;
+      left: 2.2%;
+      width: 130px;
+      height: 70px;
+    }
+    
+    @media only screen and (max-width: $bp-large-medium) {
+      top: 40%;
+      left: 2.5%;
+      width: 130px;
+      height: 70px;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      top: 42%;
+      left: 1.6%;
+      width: 120px;
+      height: 65px;
+    }
+    @media only screen and (max-width: $bp-small) {
+      top: 43%;
+      left: 1.7%;
+      width: 130px;
+      height: 62px;
+
+    }
+    @for $i from 1 through 6 {
+      &--#{$i} {
+        background: url('../img/face-' + $i + '-small.jpg'),radial-gradient(transparent, red 20%);
+        background-size: cover;
+        background-position: center;
+      }
+    }
+  }
+}

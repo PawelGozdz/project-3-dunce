@@ -1,0 +1,44 @@
+body {
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.heading-secondary {
+  font-size: 4.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing:3px;
+  text-transform: uppercase;
+  font-family: 'Amatic SC', cursive, 'sans-serif';
+  background-image: linear-gradient(to right, $color-secondary, $color-quaternary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 35px;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 30px;
+  }
+}
+
+.heading-secondary-1 {
+  font-size: 3rem;
+  padding-top: .5rem;
+  align-self: center;
+  text-align: center;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 25px;
+    padding-top: 4px;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 20px;
+    padding-top: 3px;
+  }
+}

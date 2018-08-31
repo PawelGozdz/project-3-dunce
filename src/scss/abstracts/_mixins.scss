@@ -1,0 +1,123 @@
+// Navbar
+
+@mixin dropdown-arrow--down($color) {
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 13px solid $color;
+    top: -9%;
+    left: 50%;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    z-index: 19;
+    transform: translateX(-50%);
+  }
+}
+
+// Box shadow
+@mixin shadow-no-click {
+  box-shadow: 2px 3px 10px $color-grey-medium;
+}
+@mixin shadow-click {
+  box-shadow: 3px 5px 15px darken($color-grey-medium, 7%);
+}
+@mixin shadow-search {
+  box-shadow: 5px 0 60px darken($color-grey-medium, 10%),
+              -5px 0 60px darken($color-grey-medium, 10%);
+}
+
+// nav-container: for background image from the header section
+@mixin nav-cont-bg($pic-nr) {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/book-" + $pic-nr + "-small.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .1;
+    z-index: -1;
+  }
+}
+
+// info bg color
+@mixin info-color($color) {
+  background-image: linear-gradient(to right top, $color 30%,
+                                                     darken($color, 10%) 50%,
+                                                     $color 50%,
+                                                     darken($color, 10%) 90%);
+}
+
+@mixin circle-show {
+  @keyframes circles {
+    0% {
+      transform: translateX(60rem);
+      opacity: 0;
+    }
+    10% {opacity: 0;}
+    
+    
+    20% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    55% {
+      box-shadow: 0px -0px 0px $color-quaternary,
+                  0px 0px 0px $color-quaternary,
+                  -0px 0px 0px $color-quaternary,
+                  -0px -0px 0px $color-quaternary;
+    }
+    60% {
+      box-shadow: 0px -0px 1px rgba($color-quaternary, .25),
+                  0px 0px 1px rgba($color-quaternary, .25),
+                  -0px 0px 1px rgba($color-quaternary, .25),
+                  -0px -0px 1px rgba($color-quaternary, .25);
+    }
+    62% {
+      box-shadow: 2px -2px 12px rgba($color-quaternary, .5),
+                  2px 2px 12px rgba($color-quaternary, .5),
+                  -2px 2px 12px rgba($color-quaternary, .5),
+                  -2px -2px 12px rgba($color-quaternary, .5);
+    }
+    64% {
+      box-shadow: 0px -0px 3px rgba($color-quaternary, .25),
+                  0px 0px 3px rgba($color-quaternary, .25),
+                  -0px 0px 3px rgba($color-quaternary, .25),
+                  -0px -0px 3px rgba($color-quaternary, .25)
+    }
+    66% {
+      box-shadow: 2px -2px 12px rgba($color-quaternary, .5),
+                  2px 2px 12px rgba($color-quaternary, .5),
+                  -2px 2px 12px rgba($color-quaternary, .5),
+                  -2px -2px 12px rgba($color-quaternary, .5);
+    }
+    68% {
+      box-shadow: 0px -0px 2px rgba($color-quaternary, .5),
+                  0px 0px 2px rgba($color-quaternary, .5),
+                  -0px 0px 2px rgba($color-quaternary, .5),
+                  -0px -0px 2px rgba($color-quaternary, .5);
+    }
+
+    88% {
+      transform: translateX(0);
+      opacity: .65;
+    }
+
+    92% {
+      opacity: .05;
+    }
+
+    100% {
+      transform: translateX(60rem);
+      opacity: 0;
+    }
+  }
+}

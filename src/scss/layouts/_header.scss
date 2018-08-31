@@ -1,0 +1,155 @@
+.container-fluid--header {
+  position: relative;
+  height: 58.7rem;
+
+  @media only screen and (max-width: $bp-large) {
+    height: 500px;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    height: 450px;
+  }
+}
+.main-header {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-image: radial-gradient(circle, rgba($color-primary, 20%) 15%, darken($color-grey-medium, 10%) 90%);
+
+  .container {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.d-absolute {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.menu__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.search {
+  
+  position: absolute;
+  top: 75%;
+  padding: .3rem;
+  border: 4px solid $color-quaternary;
+  border-radius: 8px;
+
+  @media only screen and (max-width: $bp-large) {
+    top: 70%;
+    border: 3px solid $color-quaternary;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    top: 80%;
+  }
+  @media only screen and (max-width: $bp-small) {
+    top: 85%;
+  }
+
+  @include shadow-search;
+
+  &__form {
+    display: flex;
+    flex: 1;
+    position: relative;
+    width: 85rem;
+
+    @media only screen and (max-width: $bp-large) {
+      width: 600px;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 400px;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      width: 300px;
+    }
+  }
+
+  &__input {
+    flex: 0 0 90%;
+    font-size: 2.5rem;
+    color: $color-quaternary;
+    background-color: rgba($color-white, .15);
+    font-family: inherit;
+    border: 2px solid transparent;
+
+    @media only screen and (max-width: $bp-large) {
+      font-size: 18px;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      flex: 0 0 80%;
+    }
+
+    &:focus {
+      outline: none;
+      border: 2px solid rgba($color-quaternary, .15);
+    }
+  }
+
+  &__label {
+    display: block;
+    font-size: 1.5rem;
+    color: rgba($color-quaternary, .6);
+    margin-left: .5rem;
+    position: absolute;
+    top: 120%;
+    left: 0;
+    opacity: 1;
+    transform: scale(1);
+    transition: all .5s;
+
+    @media only screen and (max-width: $bp-large) {
+      font-size: 12px;
+      margin-left: 3px;
+    }
+  }
+
+  &__input:placeholder-shown + &__label {
+    top: 50%;
+    left: 8%;
+    opacity: 0;
+    transform: scale(1.7);
+  }
+
+  &__btn {
+    flex: 0 0 10%;
+
+    @media only screen and (max-width: $bp-medium) {
+      flex: 0 0 20%;
+    }
+  }
+}
+
+.hero {
+  position: absolute;
+  display: none;
+  text-align: center;
+  color: $color-quaternary;
+
+  h1 {
+    font-size: 36px;
+  }
+
+  span {
+    font-size: 16px;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    top: 55%;
+    display: block;
+  }
+}

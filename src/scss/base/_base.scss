@@ -1,0 +1,40 @@
+$bp-largest: 1200px; // 1200px
+$bp-large: 992px;
+$bp-large-medium: 840px;
+$bp-medium: 728px;
+$bp-small: 540px;
+
+// (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px)
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px/16px = 62.5%
+}
+
+body {
+  box-sizing: inherit;
+  margin: 0 auto;
+
+}
+
+a {
+  color: inherit;
+}
+
+a > * {
+  display: flex;
+}
+
+ul {
+  list-style: none;
+}
+

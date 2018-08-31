@@ -1,0 +1,1584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dunce - online books</title>
+  <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,700|Quicksand:400,500&amp;subset=latin-ext,vietnamese" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css"> -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container-fluid container-fluid--header">
+      <header class="main-header">
+        <!-- Container with cards mus be first, to avoid ::before flashing light overlaping the menu section -->
+        <div class="container">
+          <div class="cards">
+            <div class="cards__unit card__unit--1">
+              <h4>Categories</h4>
+              <span>Choose from more than 15 different categories</span>
+            </div>
+            <div class="cards__unit card__unit--2">
+              <h4>Library</h4>
+              <span>There is more than 10.000 books in our stock</span>
+            </div>
+            <div class="cards__unit card__unit--3">
+              <h4>Offers</h4>
+              <span>Check out our daily offers for the best prices</span>
+            </div>
+            <div class="cards__unit card__unit--4">
+              <h4>Best Sellers</h4>
+              <span>Keep up to date with the best-selling products</span>
+            </div>
+            <div class="cards__unit card__unit--5">
+              <h4>Gifts</h4>
+              <span>What is better than a book for the gift?</span>
+            </div>
+            <div class="cards__unit card__unit--6">
+              <h4>Customers</h4>
+              <span>Join over 200,000 satisfied customers</span>
+            </div>
+          </div>
+
+          <!-- HERO ONLY FOR MOBILE -->
+          <div class="hero">
+            <h1>We tell the best stories</h1>
+            <span>Your online book store</span>
+          </div>
+
+          <div class="search">
+            <form class="search__form">
+              <input type="text" class="search__input" id="search" placeholder="Search title, author, keyword...">
+              <label class="search__label" for="search">Search title, author, keyword...</label>
+              <button class="search__btn">
+                <svg class="cart-icon">
+                  <use xlink:href="img/sprite.svg#icon-search"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="container d-absolute">
+          <nav class="navigation">
+            <!-- Fiction Biography Education Food & Drink History Travel Computing Horror -->
+            <ul class="navbar navbar__list">
+              <li class="navbar__menu navbar__item navbar__item--categories" role="button">
+                <a href="#" class="navbar__link dropdown-arrow--down">Categories</a>
+                <div class="nav-dropdown ">
+                  <div class="nav-container nav-container--categories">
+                    <a href="#" class="navbar__link">Biography</a>
+                    <div class="nav__info nav__info--categories">
+                      <h2>Inspiring Stories</h2>
+                      <span>People who changed the world</span>
+                      <p>If something's important enough, you should try. Even if you - the probable outcome is failure.</p>
+                      <blockquote>-Elon Musk</blockquote>
+                      <button class="read-more">Read More</button>
+                    </div>
+                  </div>
+                  <div class="nav-container nav-container--categories">
+                    <a href="#" class="navbar__link">Computing</a>
+                    <div class="nav__info nav__info--categories">
+                      <h2>Programming Languages</h2>
+                      <span>Do you even code bro?</span>
+                      <p>Wait … what about all the high-paying tech jobs? Isn’t this the best time to be a programmer? Choose the right programming book and start learning.</p>
+                      <button class="read-more">Read More</button>
+                    </div>
+                  </div>     
+                  <div class="nav-container nav-container--categories">
+                    <a href="#" class="navbar__link">Education</a>
+                    <div class="nav__info nav__info--categories">
+                      <h2>Education & Philosophy</h2>
+                      <span>Start fighting for what you want</span>
+                      <p>Your philosophy creates your attitudes, which creates your actions, which creates your results, which creates your life  .</p>
+                      <button class="read-more">Read More</button>
+                    </div>
+                  </div>  
+                  <div class="nav-container nav-container--categories">
+                    <a href="#" class="navbar__link">Fiction</a>
+                    <div class="nav__info nav__info--categories">
+                      <h2>Why Read Fiction?</h2>
+                      <span>It is all about a character</span>
+                      <p>Fiction can show you all kinds of truths that the facts can’t. It can make you empathize with experiences that the facts can’t.</p>
+                      <button class="read-more">Read More</button>
+                    </div>
+                  </div>   
+                  <div class="nav-container nav-container--categories">
+                    <a href="#" class="navbar__link">Food & Drink</a>
+                    <div class="nav__info nav__info--categories">
+                      <h2>Recipe Ideas</h2>
+                      <span>Make cooking fun and easy</span>
+                      <p>Looking to make nutritious, delicious and easy meals? Explore an unlimited library of books to choose from</p>
+                      <button class="read-more">Read More</button>
+                    </div>
+                  </div>    
+                  <div class="nav-container nav-container--categories">
+                    <a href="#" class="navbar__link">History</a>
+                    <div class="nav__info nav__info--categories">
+                      <h2>History</h2>
+                      <span>Learn from mistakes</span>
+                      <p>Those that fail to learn from history, are doomed to repeat it</p>
+                      <button class="read-more">Read More</button>
+                    </div>
+                  </div>
+                  <div class="nav-container nav-container--categories">
+                    <a href="#" class="navbar__link">Horror</a>
+                    <div class="nav__info nav__info--categories">
+                      <h2>Are You Prepared?</h2>
+                      <span>How strong is your imagination?</span>
+                      <p>Never trust a book by its cover, but something about those spooky images made it impossible to put down.</p>
+                      <button class="read-more">Read More</button>
+                    </div>
+                  </div>
+                  <div class="nav-container nav-container--categories">
+                    <a href="#" class="navbar__link">Sport</a>
+                    <div class="nav__info nav__info--categories">
+                      <h2>All About Sport</h2>
+                      <span>You can't win unless you learn how to lose.</span>
+                      <p>The riots, the lagers, and the larger-than-life characters all get their fair share of time.</p>
+                      <button class="read-more">Read More</button>
+                    </div>
+                  </div>
+                  <div class="nav-container nav-container--categories">
+                    <a href="#" class="navbar__link">Travel</a>
+                    <div class="nav__info nav__info--categories">
+                      <h2>Find Your Destitanion</h2>
+                      <span>Don't dream about it, just make it.</span>
+                      <p>Experience is far more valuable than money will ever be. Discover that everyone is wrong about other countries.</p>
+                      <button class="read-more">Read More</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="navbar__menu navbar__item navbar__item--deals">
+                <a href="#" class="navbar__link dropdown-arrow--down">Deals</a>
+                <div class="nav-dropdown ">
+                  <div class="nav-container nav-container--deals">
+                    <a href="#" class="navbar__link">Today's Deals</a>
+                    <div class="nav__info nav__info--deals">
+                      <div class="nav__deal deal">
+                        <div class="deal__img">
+                          <img src=".//img/deal-1-small.jpg" alt="deal-1">
+                        </div>
+                        <span class="deal__title">Arthas:Rise of the Lich King</span>
+                        <span class="deal__author">Christie Golden</span>
+                        <span class="deal__current deal__current--today">Today's deal</span>
+                        <span class="deal__finish">Ends in <span>1</span> day(s)</span>
+                        <div class="review">
+                          <span>Customer review </span>
+                          <a href="#" class="navbar__link">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span>(97)</span>
+                          </a>
+                        </div>
+                        <div class="deal__category">
+                          <span>Category</span>
+                          <span><a href="#">Fiction</a></span>
+                        </div>
+                        <div class="deal__price">
+                          <span>£5.99</span>
+                          <span>£2.99</span>
+                        </div>
+                        <button class="read-more read-more--deal">Add to basket</button>
+                      </div>
+                      <div class="nav__deal deal">
+                        <div class="deal__img">
+                          <img src=".//img/deal-2-small.jpg" alt="deal-2">
+                        </div>
+                        <span class="deal__title">HTML & CSS for beginners with HTML5</span>
+                        <span class="deal__author">Christie Golden</span>
+                        <span class="deal__current deal__current--today">Today's deal</span>
+                        <span class="deal__finish">Ends in <span>1</span> day(s)</span>
+                        <div class="review">
+                          <span>Customer review</span>
+                          <a href="#" class="navbar__link">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span>(43)</span>
+                          </a>
+                        </div>
+                        <div class="deal__category">
+                          <span>Category</span>
+                          <span><a href="#">Computing</a></span>
+                        </div>
+                        <div class="deal__price">
+                          <span>£9.99</span>
+                          <span>£3.49</span>
+                        </div>
+                        <button class="read-more read-more--deal">Add to basket</button>
+                      </div>
+                      <div class="nav__deal deal">
+                        <div class="deal__img">
+                          <img src=".//img/deal-3-small.jpg" alt="deal-3">
+                        </div>
+                        <span class="deal__title">Winston Churchill</span>
+                        <span class="deal__author">Katie Daynes</span>
+                        <span class="deal__current deal__current--today">Today's deal</span>
+                        <span class="deal__finish">Ends in <span>1</span> day(s)</span>
+                        <div class="review">
+                          <span>Customer review </span>
+                          <a href="#" class="navbar__link">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span>(112)</span>
+                          </a>
+                        </div>
+                        <div class="deal__category">
+                          <span>Category</span>
+                          <span><a href="#">History</a></span>
+                        </div>
+                        <div class="deal__price">
+                          <span>£6.99</span>
+                          <span>£2.49</span>
+                        </div>
+                        <button class="read-more read-more--deal">Add to basket</button>
+                      </div>
+                      <div class="nav__deal deal">
+                        <div class="deal__img">
+                          <img src=".//img/deal-4-small.jpg" alt="deal-4">
+                        </div>
+                        <span class="deal__title">How to win friends and Influence People</span>
+                        <span class="deal__author">Dale Carnegie</span>
+                        <span class="deal__current deal__current--today">Today's deal</span>
+                        <span class="deal__finish">Ends in <span>1</span> day(s)</span>
+                        <div class="review">
+                          <span>Customer review </span>
+                          <a href="#" class="navbar__link">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span>(334)</span>
+                          </a>
+                        </div>
+                        <div class="deal__category">
+                          <span>Category</span>
+                          <span><a href="#">Education</a></span>
+                        </div>
+                        <div class="deal__price">
+                          <span>£7.99</span>
+                          <span>£1.99</span>
+                        </div>
+                        <button class="read-more read-more--deal">Add to basket</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="nav-container nav-container--deals">
+                    <a href="#" class="navbar__link">This Week's Deals</a>
+                    <div class="nav__info nav__info--deals">
+                      <div class="nav__deal deal">
+                        <div class="deal__img">
+                          <img src=".//img/deal-5-small.jpg" alt="deal-5">
+                        </div>
+                        <span class="deal__title">The Last Great Fight</span>
+                        <span class="deal__author">Joe Layden</span>
+                        <span class="deal__current deal__current--week">This week's deal</span>
+                        <span class="deal__finish">Ends in <span>4</span> day(s)</span>
+                        <div class="review">
+                          <span>Customer review </span>
+                          <a href="#" class="navbar__link">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span>(68)</span>
+                          </a>
+                        </div>
+                        <div class="deal__category">
+                          <span>Category</span>
+                          <span><a href="#">Sport</a></span>
+                        </div>
+                        <div class="deal__price">
+                          <span>£5.99</span>
+                          <span>£3.29</span>
+                        </div>
+                        <button class="read-more read-more--deal">Add to basket</button>
+                      </div>
+                      <div class="nav__deal deal">
+                        <div class="deal__img">
+                          <img src=".//img/deal-6-small.jpg" alt="deal-6">
+                        </div>
+                        <span class="deal__title">4000 Essential English Words</span>
+                        <span class="deal__author">Paul Nation</span>
+                        <span class="deal__current deal__current--week">This week's deal</span>
+                        <span class="deal__finish">Ends in <span>4</span> day(s)</span>
+                        <div class="review">
+                          <span>Customer review</span>
+                          <a href="#" class="navbar__link">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span>(78)</span>
+                          </a>
+                        </div>
+                        <div class="deal__category">
+                          <span>Category</span>
+                          <span><a href="#">Education</a></span>
+                        </div>
+                        <div class="deal__price">
+                          <span>£8.99</span>
+                          <span>£3.99</span>
+                        </div>
+                        <button class="read-more read-more--deal">Add to basket</button>
+                      </div>
+                      <div class="nav__deal deal">
+                        <div class="deal__img">
+                          <img src=".//img/deal-7-small.jpg" alt="deal-7">
+                        </div>
+                        <span class="deal__title">My Wonderful Word of Fashion</span>
+                        <span class="deal__author">Nina Chakrabarti</span>
+                        <span class="deal__current deal__current--week">This week's deal</span>
+                        <span class="deal__finish">Ends in <span>4</span> day(s)</span>
+                        <div class="review">
+                          <span>Customer review </span>
+                          <a href="#" class="navbar__link">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span>(32)</span>
+                          </a>
+                        </div>
+                        <div class="deal__category">
+                          <span>Category</span>
+                          <span><a href="#">Education</a></span>
+                        </div>
+                        <div class="deal__price">
+                          <span>£6.99</span>
+                          <span>£3.49</span>
+                        </div>
+                        <button class="read-more read-more--deal">Add to basket</button>
+                      </div>
+                      <div class="nav__deal deal">
+                        <div class="deal__img">
+                          <img src=".//img/deal-8-small.jpg" alt="deal-8">
+                        </div>
+                        <span class="deal__title">Encyclopedia of Australian Plants</span>
+                        <span class="deal__author">W. Roger Ellion & David L. Jones</span>
+                        <span class="deal__current deal__current--week">This week's deal</span>
+                        <span class="deal__finish">Ends in <span>2</span> day(s)</span>
+                        <div class="review">
+                          <span>Customer review </span>
+                          <a href="#" class="navbar__link">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span>(97)</span>
+                          </a>
+                        </div>
+                        <div class="deal__category">
+                          <span>Category</span>
+                          <span><a href="#">Fiction</a></span>
+                        </div>
+                        <div class="deal__price">
+                          <span>£5.99</span>
+                          <span>£2.99</span>
+                        </div>
+                        <button class="read-more read-more--deal">Add to basket</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="nav-container nav-container--deals">
+                    <a href="#" class="navbar__link">This Month's Deals</a>
+                    <div class="nav__info nav__info--deals">
+                      <div class="nav__deal deal">
+                        <div class="deal__img">
+                          <img src=".//img/deal-9-small.jpg" alt="deal-9">
+                        </div>
+                        <span class="deal__title">The Ancient Roman Empire</span>
+                        <span class="deal__author">Joe Layden</span>
+                        <span class="deal__current deal__current--month">This month's deal</span>
+                        <span class="deal__finish">Ends in <span>17</span> day(s)</span>
+                        <div class="review">
+                          <span>Customer review </span>
+                          <a href="#" class="navbar__link">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span>(59)</span>
+                          </a>
+                        </div>
+                        <div class="deal__category">
+                          <span>Category</span>
+                          <span><a href="#">History</a></span>
+                        </div>
+                        <div class="deal__price">
+                          <span>£11.99</span>
+                          <span>£5.99</span>
+                        </div>
+                        <button class="read-more read-more--deal">Add to basket</button>
+                      </div>
+                      <div class="nav__deal deal">
+                        <div class="deal__img">
+                          <img src=".//img/deal-10-small.jpg" alt="deal-10">
+                        </div>
+                        <span class="deal__title">To Watch You Bleed</span>
+                        <span class="deal__author">Jordon Greene</span>
+                        <span class="deal__current deal__current--month">This month's deal</span>
+                        <span class="deal__finish">Ends in <span>17</span> day(s)</span>
+                        <div class="review">
+                          <span>Customer review</span>
+                          <a href="#" class="navbar__link">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span>(110)</span>
+                          </a>
+                        </div>
+                        <div class="deal__category">
+                          <span>Category</span>
+                          <span><a href="#">Horror</a></span>
+                        </div>
+                        <div class="deal__price">
+                          <span>£7.99</span>
+                          <span>£2.99</span>
+                        </div>
+                        <button class="read-more read-more--deal">Add to basket</button>
+                      </div>
+                      <div class="nav__deal deal">
+                        <div class="deal__img">
+                          <img src=".//img/deal-11-small.jpg" alt="deal-11">
+                        </div>
+                        <span class="deal__title">Teach Yourself to Play Blues Guitar</span>
+                        <span class="deal__author">Dave Rubin</span>
+                        <span class="deal__current deal__current--month">This month's deal</span>
+                        <span class="deal__finish">Ends in <span>17</span> day(s)</span>
+                        <div class="review">
+                          <span>Customer review </span>
+                          <a href="#" class="navbar__link">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span>(21)</span>
+                          </a>
+                        </div>
+                        <div class="deal__category">
+                          <span>Category</span>
+                          <span><a href="#">Education</a></span>
+                        </div>
+                        <div class="deal__price">
+                          <span>£13.99</span>
+                          <span>£7.49</span>
+                        </div>
+                        <button class="read-more read-more--deal">Add to basket</button>
+                      </div>
+                      <div class="nav__deal deal">
+                        <div class="deal__img">
+                          <img src=".//img/deal-12-small.jpg" alt="deal-12">
+                        </div>
+                        <span class="deal__title">Why You Need to Visit Georgia</span>
+                        <span class="deal__author">Paul Nation</span>
+                        <span class="deal__current deal__current--month">This month's deal</span>
+                        <span class="deal__finish">Ends in <span>17</span> day(s)</span>
+                        <div class="review">
+                          <span>Customer review </span>
+                          <a href="#" class="navbar__link">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span>(45)</span>
+                          </a>
+                        </div>
+                        <div class="deal__category">
+                          <span>Category</span>
+                          <span><a href="#">Travel</a></span>
+                        </div>
+                        <div class="deal__price">
+                          <span>£10.99</span>
+                          <span>£5.99</span>
+                        </div>
+                        <button class="read-more read-more--deal">Add to basket</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="nav-container nav-container--deals">
+                    <form>
+                      <!-- Fiction Biography Education Food & Drink History Travel Computing Horror -->
+                      <div class="form-group nav-form">
+                        <label for="form-category">Category</label>
+                        <select id="form-category" class="form-control">
+                          <option>All</option>
+                          <option>Biography</option>
+                          <option>Computing</option>
+                          <option>Education</option>
+                          <option>Fiction</option>
+                          <option>Food & Drink</option>
+                          <option>History</option>
+                          <option>Horror</option>
+                          <option>Sport</option>
+                          <option>Travel</option>
+                        </select>
+                      </div>
+                    </form>
+                    <div class="nav__drop-list">
+                      <span>Price range</span>
+                      <ul>
+                        <li><a href="#" class="navbar__link">Under £15</a></li>
+                        <li><a href="#" class="navbar__link">£10-£15</a></li>
+                        <li><a href="#" class="navbar__link">£15-£20</a></li>
+                        <li><a href="#" class="navbar__link">£20-£30</a></li>
+                        <li><a href="#" class="navbar__link">£30 and above</a></li>
+                      </ul>
+                    </div>
+                    <div class="nav__review">
+                      <div class="review">
+                        <span>Customer review </span>
+                        <a href="#" class="navbar__link">
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                        </a>
+                      </div>
+                      <div class="review">
+                        <a href="#" class="navbar__link">
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                        </a>
+                      </div>
+                      <div class="review">
+                        <a href="#" class="navbar__link">
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                        </a>
+                      </div>
+                      <div class="review">
+                        <a href="#" class="navbar__link">
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                        </a>
+                      </div>
+                      <div class="review">
+                        <a href="#" class="navbar__link">
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="navbar__menu navbar__item navbar__item--best">
+                <a href="#" class="navbar__link dropdown-arrow--down">Best sellers</a>
+                <div class="nav-dropdown ">
+                  <div class="nav-container nav-container--best">
+                    <span class="navbar__link">Top Sellers</span>
+                    <a href="#" class="navbar__link">2017</a>
+                    <div class="nav__info nav__info--best">
+                      <!-- Title -->
+                      <div class="nav__best nav__best--title">
+                        <h3>Title</h3>
+                        <ul>
+                          <li>
+                            <span class="number">1.</span>
+                            <img src="img/book-1-small.jpg" alt="Title-1" class="small__round">
+                            <a href="#">Elon Musk</a>
+                          </li>
+                          <li>
+                            <span class="number">2.</span>
+                            <img src="img/book-2-small.jpg" alt="Title-2" class="small__round">
+                            <a href="#">Jumping Into C++</a>
+                          </li>
+                          <li>
+                            <span class="number">3.</span>
+                            <img src="img/book-3-small.jpg" alt="Title-3" class="small__round">
+                            <a href="#">The Slight Edge</a>
+                          </li>
+                          <li>
+                            <span class="number">4.</span>
+                            <img src="img/book-4-small.jpg" alt="Title-4" class="small__round">
+                            <a href="#">Robopocalypse</a>
+                          </li>
+                          <li>
+                            <span class="number">5.</span>
+                            <img src="img/book-5-small.jpg" alt="Title-5" class="small__round">
+                            <a href="#">Food Revolution</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- Author -->
+                      <div class="nav__best nav__best--author">
+                        <h3>Author</h3>
+                        <ul>
+                          <li>
+                            <span class="number">1.</span>
+                            <img src="img/author-1-small.jpg" alt="Author-1" class="small__round">
+                            <a href="#">Napoleon Hill</a>
+                          </li>
+                          <li>
+                            <span class="number">2.</span>
+                            <img src="img/author-2-small.jpg" alt="Author-2" class="small__round">
+                            <a href="#">Dale Carnegie</a>
+                          </li>
+                          <li>
+                            <span class="number">3.</span>
+                            <img src="img/author-3-small.jpg" alt="Author-3" class="small__round">
+                            <a href="#">Stephen King</a>
+                          </li>
+                          <li>
+                            <span class="number">4.</span>
+                            <img src="img/author-4-small.jpg" alt="Author-4" class="small__round">
+                            <a href="#">Graham Masterton</a>
+                          </li>
+                          <li>
+                            <span class="number">5.</span>
+                            <img src="img/author-5-small.jpg" alt="Author-5" class="small__round">
+                            <a href="#">Brian Tracy</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="nav-container nav-container--best">
+                    <a href="#" class="navbar__link">2016</a>
+                    <div class="nav__info nav__info--best">
+                      <!-- Title -->
+                      <div class="nav__best nav__best--title">
+                        <h3>Title</h3>
+                        <ul>
+                          <li>
+                            <span class="number">1.</span>
+                            <img src="img/book-4-small.jpg" alt="Title-4" class="small__round">
+                            <a href="#">Robopocalypse</a>
+                          </li>
+                          <li>
+                            <span class="number">2.</span>
+                            <img src="img/book-3-small.jpg" alt="Title-3" class="small__round">
+                            <a href="#">The Slight Edge</a>
+                          </li>
+                          <li>
+                            <span class="number">3.</span>
+                            <img src="img/book-5-small.jpg" alt="Title-5" class="small__round">
+                            <a href="#">Food Revolution</a>
+                          </li>
+                          <li>
+                            <span class="number">4.</span>
+                            <img src="img/book-1-small.jpg" alt="Title-1" class="small__round">
+                            <a href="#">Elon Musk</a>
+                          </li>
+                          <li>
+                            <span class="number">5.</span>
+                            <img src="img/book-2-small.jpg" alt="Title-2" class="small__round">
+                            <a href="#">Jumping Into C++</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- Author -->
+                      <div class="nav__best nav__best--author">
+                        <h3>Author</h3>
+                        <ul>
+                          <li>
+                            <span class="number">1.</span>
+                            <img src="img/author-3-small.jpg" alt="Author-3" class="small__round">
+                            <a href="#">Stephen King</a>
+                          </li>
+                          <li>
+                            <span class="number">2.</span>
+                            <img src="img/author-1-small.jpg" alt="Author-1" class="small__round">
+                            <a href="#">Napoleon Hill</a>
+                          </li>
+                          <li>
+                            <span class="number">3.</span>
+                            <img src="img/author-5-small.jpg" alt="Author-5" class="small__round">
+                            <a href="#">Brian Tracy</a>
+                          </li>
+                          <li>
+                            <span class="number">4.</span>
+                            <img src="img/author-4-small.jpg" alt="Author-4" class="small__round">
+                            <a href="#">Graham Masterton</a>
+                          </li>
+                          <li>
+                            <span class="number">5.</span>        
+                            <img src="img/author-2-small.jpg" alt="Author-2" class="small__round">
+                            <a href="#">Dale Carnegie</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="nav-container nav-container--best">
+                    <a href="#" class="navbar__link">2015</a>
+                    <div class="nav__info nav__info--best">
+                      <!-- Title -->
+                      <div class="nav__best nav__best--title">
+                        <h3>Title</h3>
+                        <ul>
+                          <li>
+                            <span class="number">1.</span>
+                            <img src="img/book-1-small.jpg" alt="Title-1" class="small__round">
+                            <a href="#">Elon Musk</a>
+                          </li>
+                          <li>
+                            <span class="number">2.</span>
+                            <img src="img/book-2-small.jpg" alt="Title-2" class="small__round">
+                            <a href="#">Jumping Into C++</a>
+                          </li>
+                          <li>
+                            <span class="number">3.</span>
+                            <img src="img/book-3-small.jpg" alt="Title-3" class="small__round">
+                            <a href="#">The Slight Edge</a>
+                          </li>
+                          <li>
+                            <span class="number">4.</span>
+                            <img src="img/book-4-small.jpg" alt="Title-4" class="small__round">
+                            <a href="#">Robopocalypse</a>
+                          </li>
+                          <li>
+                            <span class="number">5.</span>
+                            <img src="img/book-5-small.jpg" alt="Title-5" class="small__round">
+                            <a href="#">Food Revolution</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- Author -->
+                      <div class="nav__best nav__best--author">
+                        <h3>Author</h3>
+                        <ul>
+                          <li>
+                            <span class="number">1.</span>
+                            <img src="img/author-1-small.jpg" alt="Author-1" class="small__round">
+                            <a href="#">Napoleon Hill</a>
+                          </li>
+                          <li>
+                            <span class="number">2.</span>
+                            <img src="img/author-2-small.jpg" alt="Author-2" class="small__round">
+                            <a href="#">Dale Carnegie</a>
+                          </li>
+                          <li>
+                            <span class="number">3.</span>
+                            <img src="img/author-3-small.jpg" alt="Author-3" class="small__round">
+                            <a href="#">Stephen King</a>
+                          </li>
+                          <li>
+                            <span class="number">4.</span>
+                            <img src="img/author-4-small.jpg" alt="Author-4" class="small__round">
+                            <a href="#">Graham Masterton</a>
+                          </li>
+                          <li>
+                            <span class="number">5.</span>
+                            <img src="img/author-5-small.jpg" alt="Author-5" class="small__round">
+                            <a href="#">Brian Tracy</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="nav-container nav-container--best">
+                    <a href="#" class="navbar__link">2014</a>
+                    <div class="nav__info nav__info--best">
+                      <!-- Title -->
+                      <div class="nav__best nav__best--title">
+                        <h3>Title</h3>
+                        <ul>
+                          <li>
+                            <span class="number">1.</span>
+                            <img src="img/book-4-small.jpg" alt="Title-4" class="small__round">
+                            <a href="#">Robopocalypse</a>
+                          </li>
+                          <li>
+                            <span class="number">2.</span>
+                            <img src="img/book-3-small.jpg" alt="Title-3" class="small__round">
+                            <a href="#">The Slight Edge</a>
+                          </li>
+                          <li>
+                            <span class="number">3.</span>
+                            <img src="img/book-5-small.jpg" alt="Title-5" class="small__round">
+                            <a href="#">Food Revolution</a>
+                          </li>
+                          <li>
+                            <span class="number">4.</span>
+                            <img src="img/book-1-small.jpg" alt="Title-1" class="small__round">
+                            <a href="#">Elon Musk</a>
+                          </li>
+                          <li>
+                            <span class="number">5.</span>
+                            <img src="img/book-2-small.jpg" alt="Title-2" class="small__round">
+                            <a href="#">Jumping Into C++</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- Author -->
+                      <div class="nav__best nav__best--author">
+                        <h3>Author</h3>
+                        <ul>
+                          <li>
+                            <span class="number">1.</span>
+                            <img src="img/author-3-small.jpg" alt="Author-3" class="small__round">
+                            <a href="#">Stephen King</a>
+                          </li>
+                          <li>
+                            <span class="number">2.</span>
+                            <img src="img/author-1-small.jpg" alt="Author-1" class="small__round">
+                            <a href="#">Napoleon Hill</a>
+                          </li>
+                          <li>
+                            <span class="number">3.</span>
+                            <img src="img/author-5-small.jpg" alt="Author-5" class="small__round">
+                            <a href="#">Brian Tracy</a>
+                          </li>
+                          <li>
+                            <span class="number">4.</span>
+                            <img src="img/author-4-small.jpg" alt="Author-4" class="small__round">
+                            <a href="#">Graham Masterton</a>
+                          </li>
+                          <li>
+                            <span class="number">5.</span>        
+                            <img src="img/author-2-small.jpg" alt="Author-2" class="small__round">
+                            <a href="#">Dale Carnegie</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div
+                </div>
+              </li>
+              <li class="navbar__menu navbar__item navbar__item--news">
+                  <span class="text-nav text-nav--name">Hi,Pawel</span>
+                  <div class="text-nav__box">
+                    <span class="text-nav text-nav--1">Your Philosophy...</span>
+                    <span class="text-nav text-nav--2">Creates...</span>
+                    <span class="text-nav text-nav--3">Your Attitude...</span>
+                    <span class="text-nav text-nav--2">Which Creates...</span>
+                    <span class="text-nav text-nav--4">Your Actions...</span>
+                    <span class="text-nav text-nav--2">Which Creates...</span>
+                    <span class="text-nav text-nav--2">Your Results...</span>
+                    <span class="text-nav text-nav--2">Which Creates...</span>
+                    <span class="text-nav text-nav--2">Your Life!!!</span>
+                  </div>
+              </li>
+              <li class="navbar__menu navbar__item navbar__item--basket">
+                <a href="#" class="user-login">In Basket</a>
+                <svg class="cart-icon">
+                  <use xlink:href="img/sprite.svg#icon-shopping-cart"></use>
+                </svg>
+                <span class="basket__qty">2</span>
+                <div class="nav-dropdown ">
+                  <div class="nav__basket basket">
+                    <div class="basket__img">
+                      <img src=".//img/deal-2-small.jpg" alt="deal-2">
+                    </div>
+                    <div class="basket__box">
+                      <span class="basket__title">HTML & CSS for beginners with HTML5</span>
+                      <span class="basket__author">Christie Golden</span>
+                      <div class="review">
+                        <a href="#" class="navbar__link">
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                          <span>(97)</span>
+                        </a>
+                      </div>
+                      <div class="basket__category">
+                        <span>Category:</span>
+                        <span><a href="#">Computing</a></span>
+                      </div>
+                      <div class="basket__price">
+                        <span>£5.99</span>
+                        <span>£2.99</span>
+                      </div>
+                      <button class="read-more read-more--basket">Remove</button>
+                    </div>
+                  </div>
+                  <div class="nav__basket basket">
+                    <div class="basket__img">
+                      <img src=".//img/deal-1-small.jpg" alt="deal-1">
+                    </div>
+                    <div class="basket__box">
+                      <span class="basket__title">Arthas:Rise of the Lich King</span>
+                      <span class="basket__author">Christie Golden</span>
+                      <div class="review">
+                        <a href="#" class="navbar__link">
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                          <span>(97)</span>
+                        </a>
+                      </div>
+                      <div class="basket__category">
+                        <span>Category:</span>
+                        <span><a href="#">Fiction</a></span>
+                      </div>
+                      <div class="basket__price">
+                        <span>£5.99</span>
+                        <span>£2.99</span>
+                      </div>
+                      <button class="read-more read-more--basket">Remove</button>
+                    </div>
+                  </div>
+                  
+                  <div class="pay">
+                    <h3>SUMMARY</h3>
+                    <span>Quantity:</span>
+                    <span>2</span>
+                    <div>
+                      <span>Total:</span>
+                      <span>£5.98</span>
+                    </div>
+                    <div class="pay__save">
+                      <span>Saved:</span>
+                      <span>£6</span>
+                    </div>
+                    <div class="pay__options">
+                      <h4>Choose your payment method</h4>
+                      <div class="pay__card">
+                        <a href="#">
+                          <svg class="cart-icon">
+                            <use xlink:href="img/sprite.svg#icon-cc-visa"></use>
+                          </svg>
+                        </a>
+                        <a href="#">
+                          <svg class="cart-icon">
+                            <use xlink:href="img/sprite.svg#icon-cc-mastercard"></use>
+                          </svg>
+                        </a>
+                        <a href="#">
+                          <svg class="cart-icon">
+                            <use xlink:href="img/sprite.svg#icon-cc-paypal"></use>
+                          </svg>
+                        </a>
+                      </div>
+                      <button class="read-more read-more--deal">Pay Now</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="navbar__menu navbar__item navbar__item--user">
+                <a href="#" class="user-login  dropdown-arrow--down">User</a>
+                <div class="nav-dropdown ">
+                  <div class="nav__sub">
+                    <a href="#" class="navbar__link">Settings</a>
+                    <a href="#" class="navbar__link">Not Pawel? Log out</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </div>
+
+    <main>
+      <!-- section info -->
+      <section class="info">
+        <div class="container">
+          <h1 class="heading-secondary">Why you should stick with Us?</h1>
+          <div class="row">
+            <div class="col-sm-12 col-md-4  my-1 ">
+              <div class="card info__col info__col--1">
+                <div class="card-body">
+                  <svg class="info__icon">
+                    <use xlink:href="img/sprite.svg#icon-heart"></use>
+                  </svg>
+                  <h2 class="heading-secondary-1">Your Books</h2>
+                  <span class="info__text">Create Your Own List. Choose Your Favorite Title, Author, Category etc...</span>
+                  <div class="info__tags">
+                    <span>Title</span>
+                    <span>Author</span>
+                    <span>Category</span>
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <div class="col-sm-12 col-md-4 my-1">
+              <div class="card info__col info__col--2">
+                <div class="card-body">
+                  <svg class="info__icon">
+                    <use xlink:href="img/sprite.svg#icon-earth"></use>
+                  </svg>
+                  <h2 class="heading-secondary-1">World of Books</h2>
+                  <span class="info__text">Explore Different Languages And Read Books From Around The World</span>
+                  <div class="info__tags">
+                    <span>Languages</span>
+                    <span>Explore</span>
+                    <span>World</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 my-1">
+              <div class="card info__col info__col--3">
+                <div class="card-body">
+                  <svg class="info__icon">
+                    <use xlink:href="img/sprite.svg#icon-sale"></use>
+                  </svg>
+                  <h2 class="heading-secondary-1">Sales</h2>
+                  <span class="info__text">Check out Our Everyday Deals. Buy 4 Books And Choose 5th For Half-Price</span>
+                  <div class="info__tags">
+                    <span>Everyday</span>
+                    <span>Deals</span>
+                    <span>Half-Price</span>
+                  </div>
+                </div>
+              </div>
+            </div>          
+          </div>  
+          <div class="row">
+            <div class="col-sm-12 col-md-4 my-1 ">
+              <div class="card info__col info__col--4">
+                <div class="card-body">
+                  <svg class="info__icon">
+                    <use xlink:href="img/sprite.svg#icon-sale"></use>
+                  </svg>
+                  <h2 class="heading-secondary-1">Sales</h2>
+                  <span class="info__text">Check out Our Everyday Deals. Buy 4 Books And Choose 5th For Half-Price</span>
+                  <div class="info__tags">
+                    <span>Everyday</span>
+                    <span>Deals</span>
+                    <span>Half-Price</span>
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <div class="col-sm-12 col-md-4 my-1">
+              <div class="card info__col info__col--5">
+                <div class="card-body">
+                  <svg class="info__icon">
+                    <use xlink:href="img/sprite.svg#icon-database"></use>
+                  </svg>
+                  <h2 class="heading-secondary-1">Collection</h2>
+                  <span class="info__text">Choose Books From Our Huge Library Of Over 10.000 Books!!</span>
+                  <div class="info__tags">
+                    <span>Library</span>
+                    <span>Collection</span>
+                    <span>10.000</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 my-1">
+              <div class="card info__col info__col--6">
+                <div class="card-body">
+                  <svg class="info__icon">
+                    <use xlink:href="img/sprite.svg#icon-gift"></use>
+                  </svg>
+                  <h2 class="heading-secondary-1">Gift</h2>
+                  <span class="info__text">Book is the perfect gift! Give your loved one your favorite title.</span>
+                  <div class="info__tags">
+                    <span>Perfect</span>
+                    <span>Gift</span>
+                    <span>Love</span>
+                  </div>
+                </div>
+              </div>
+            </div>          
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-md-4 my-1 ">
+              <div class="card info__col info__col--7">
+                <div class="card-body">
+                  <svg class="info__icon">
+                    <use xlink:href="img/sprite.svg#icon-cart"></use>
+                  </svg>
+                  <h2 class="heading-secondary-1">Same-Day Delivery</h2>
+                  <span class="info__text">Get Your Order Delivered To Your Door Next Day!</span>
+                  <div class="info__tags">
+                    <span>Order</span>
+                    <span>Delivery</span>
+                    <span>Next Day</span>
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <div class="col-sm-12 col-md-4 my-1">
+              <div class="card info__col info__col--8">
+                <div class="card-body">
+                  <h2 class="heading-secondary-1">If we encounter a man of rare intellect, we should ask him what books he reads.</h2>
+                  <blockquote class="blockquote-footer">Ralph Waldo Emerson</blockquote>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 my-1">
+              <div class="card info__col info__col--9">
+                  <div class="card-body">
+                      <svg class="info__icon">
+                        <use xlink:href="img/sprite.svg#icon-bubbles"></use>
+                      </svg>
+                      <h2 class="heading-secondary-1">Customer Service</h2>
+                      <span class="info__text">Over 98% Of Our Customers Would Recommend Us To Their Friendsy</span>
+                      <div class="info__tags">
+                        <span>Customer</span>
+                        <span>Recommend</span>
+                        <span>Friends</span>
+                        <span>Familly</span>
+                      </div>
+                    </div>
+              </div>
+            </div>          
+          </div>
+        </div>
+      </section>
+
+      <!-- section choose -->
+      <section class="choose">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="choose__container">
+                <h2 class="heading-secondary">Choose Your Favorite Book...</h2>
+                <div class="choose__book">
+                  <div class="book">
+                    <span class="page turn"></span>
+                    <span class="page turn"></span>
+                    <span class="page turn"></span>
+                    <span class="page turn"></span>
+                    <span class="page turn"></span>
+                    <span class="page turn"></span>
+                    <span class="cover"></span>
+                    <span class="page"></span>
+                    <span class="cover turn"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="choose__container">
+                <h2 class="heading-secondary">...By Author, Category, Review etc</h2>
+                <div class="choose__circles">
+                  <span class="small__round">Biography</span>
+                  <span class="small__round">Computing</span>
+                  <span class="small__round">Education</span>
+                  <span class="small__round">Fiction</span>
+                  <span class="small__round">Food & Drink</span>
+                  <span class="small__round">History</span>
+                  <span class="small__round">Horror</span>
+                  <span class="small__round">Sport</span>
+                  <span class="small__round">Travel</span>
+                  <span class="small__round">Author</span>
+                  <span class="small__round">Review</span>
+                  <span class="small__round">Recom-mended</span>
+                  <span class="small__round">Newly issued</span>
+                  <span class="small__round">Best Selling</span>
+                </div>
+                <!-- <a href="#" class=" find-out">Find Out More</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section photos -->
+      <section class="photos">
+        <div class="photos__cover">
+          <div class="container">
+            <h1 class="heading-secondary">Haven't you decided yet? We are happy to help</h1>
+            <div class="row">
+              <div class="col-md-12 col-lg-8 ">
+                <div class="cover__block cover__block--desc">
+                  <div class="photos__pic-wrapper">
+                    <div class="photos__small photos__small--1"></div>
+                    <div class="photos__small photos__small--2"></div>
+                    <div class="photos__small photos__small--3"></div>
+                    <div class="photos__small photos__small--4"></div>
+                    <div class="photos__small photos__small--5"></div>
+                    <div class="photos__small photos__small--6"></div>
+                    <div class="photos__small photos__small--7"></div>
+                    <div class="photos__small photos__small--8"></div>
+                    <div class="photos__small photos__small--9"></div>
+                    <div class="photos__small photos__small--10"></div>
+                    <div class="photos__small photos__small--11"></div>
+                    <div class="photos__small photos__small--12"></div>
+                  </div>
+                  <div class="photos__desc">
+                    <h1 class="desc__heading">Why Books Are Great?</h1>  
+                    <ul class="desc__list">
+                      <li class="desc__item">They are a rich source of information<span class="form__number">1</span></li>
+                      <li class="desc__item">Improves communication skills<span class="form__number">2</span></li>
+                      <li class="desc__item">Book For £5-£10 Will Entertain For Hours<span class="form__number">3</span></li>
+                      <li class="desc__item">Can Change Our Lives For Better<span class="form__number">4</span></li>
+                      <li class="desc__item">The More You Read, The More You Learn New Things<span class="form__number">5</span></li>
+                      <li class="desc__item">Expand Your Horizons<span class="form__number">6</span></li>
+                      <li class="desc__item">Teach Different Approaches To Life And The Problems We Face<span class="form__number">7</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-12 col-lg-4 ">
+                <div class="cover__block cover__block--form">
+                  <h1 class="form__heading">Contact Us
+                    <span>Fill out the form</span>
+                  </h1>
+                  <form class="form">
+                    <div class="form__group form__group--1">
+                      <span class="form__number">1</span>
+
+                      <div class="form__sub-group">
+                        <label for="name-first" class="form__label">First Name</label>
+                        <input type="text" class="form__input" id="name-first" placeholder="First Name...">
+                      </div>
+
+                      <div class="form__sub-group">
+                        <label for="name-last" class="form__label">Last Name</label>
+                        <input type="text" class="form__input" id="name-last" placeholder="Last Name...">
+                      </div>
+                    </div>
+
+                    <div class="form__group form__group--2">
+                        <span class="form__number">2</span>
+                        
+                        <div class="form__sub-group">
+                          <label for="email" class="form__label">Email</label>
+                          <input type="email" class="form__input" id="email" placeholder="Email...">
+                        </div>
+  
+                        <div class="form__sub-group">
+                          <textarea id="subject" name="subject" class="form__textarea" placeholder="Your message..."></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="form-btn">Submit</button>                    
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row no-gutters">
+          <div class="col col-lg-3 col-md-6 col-sm-6">
+            <div class="photos__container">
+              <div class="photos__box photos__box--1"></div>
+              <div class="photos__box photos__box--2"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="photos__container">
+              <div class="photos__box photos__box--3"></div>
+              <div class="photos__box photos__box--4"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="photos__container">
+              <div class="photos__box photos__box--5"></div>
+              <div class="photos__box photos__box--6"></div>
+            </div>
+          </div>
+
+          <div class="col col-lg-3 col-md-6 col-sm-6">
+            <div class="photos__container">
+              <div class="photos__box photos__box--7"></div>
+              <div class="photos__box photos__box--8">  </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section testimonials -->
+      <section class="testimonials">
+        <div class="container">
+          <h1 class="heading-secondary">Testimonials</h1>
+          <div class="row no-gutters">
+            <div class=" col-md-6 col-lg-3">
+              <div class="testimonials__boxes">
+                <div class="testimonials__box">
+                  <span class="testimonials__text">
+                    I am their loyal customer since 2002. The best website with books out there!
+                  </span>
+                  <span class="testimonials__name">Katja,<span class="testimonials__city">Berlin</span></span>
+                  <div class="testimonials__img testimonials__img--1"></div>
+                </div>
+                <div class="testimonials__box">
+                  <span class="testimonials__text">
+                    Few simple clicks and the book is in your hands next day. Amazing site!
+                  </span>
+                  <span class="testimonials__name">Monika,<span class="testimonials__city">Nice</span></span>
+                  <div class="testimonials__img testimonials__img--2"></div>
+                </div>
+              </div>
+            </div>
+            <div class=" col-md-6 col-lg-3">
+              <div class="testimonials__boxes testimonials__boxes--double">
+                <h2 class="heading-secondary-1">
+                  <ul>
+                    <li>T</li>
+                    <li>E</li>
+                    <li>S</li>
+                    <li>T</li>
+                    <li>I</li>
+                    <li>M</li>
+                    <li>O</li>
+                    <li>N</li>
+                    <li>I</li>
+                    <li>A</li>
+                    <li>L</li>
+                    <li>S</li>
+                  </ul>
+                </h2>
+                <span>Check What Others Think About Us</span>
+              </div>
+            </div>
+            <div class=" col-md-6 col-lg-3">
+              <div class="testimonials__boxes">
+                <div class="testimonials__box">
+                  <span class="testimonials__text">
+                    Nioh nioh nioh. So cheap, so good. I'm lovin' it!!
+                  </span>
+                  <span class="testimonials__name">Freddy,<span class="testimonials__city">Los Angeles</span></span>
+                  <div class="testimonials__img testimonials__img--3"></div>
+                </div>
+                <div class="testimonials__box">
+                  <span class="testimonials__text">
+                    It never happened that I could not find the book I was looking for here
+                  </span>
+                  <span class="testimonials__name">Brad,<span class="testimonials__city">Sydney</span></span>
+                  <div class="testimonials__img testimonials__img--4"></div>
+                </div>
+              </div>
+            </div>
+            <div class=" col-md-6 col-lg-3">
+              <div class="testimonials__boxes">
+                <div class="testimonials__box">
+                  <span class="testimonials__text">
+                    Good price, fast delivery and amazing customer service. Highly recommended
+                  </span>
+                  <span class="testimonials__name">Joe,<span class="testimonials__city">Johannesburg</span></span>
+                  <div class="testimonials__img testimonials__img--5"></div>
+                </div>
+                <div class="testimonials__box">
+                  <span class="testimonials__text">
+                    Grr grr grr ggr grr grrgrg ggrrrg grg grggg grr rrggrgrrgg gr gggr gr!
+                  </span>
+                  <span class="testimonials__name">Charlie,<span class="testimonials__city">Savannah</span></span>
+                  <div class="testimonials__img testimonials__img--6"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer-main">
+      <div class="row">
+        <div class="col-lg-9 col-md-12">
+          <div class="footer-main__links">
+            <div class="row">
+              <div class="footer-main__column">
+                <!-- Fiction Biography Education Food & Drink History Travel Computing Horror -->
+                <header>Categories</header>
+                <ul class="footer-main__list">
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">Fiction</a></li>
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">Biography</a><span class="testimonials__city">New</span></li>
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">Education</a></li>
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">Food & Drink</a></li>
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">History</a></li>
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">Travel</a></li>
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">Computing</a></li>
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">Horror</a></li>
+                </ul>
+                <header>Sub-categories</header>
+                <ul class="footer-main__list">
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">Children's books</a><span class="testimonials__city">New</span></li>
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">Car books</a></li>
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">Comic books</a></li>
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">e-books</a></li>
+                </ul>
+              </div>
+
+              <div class="footer-main__column">
+                <header>Most Popular</header>
+                <ul class="footer-main__list">
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">Authors</a></li>
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">Titles</a></li>
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">Caregories</a></li>
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">Subjects</a></li>
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">Newly released</a><span class="testimonials__city">New</span></li>
+                </ul>
+                <header>Previous Years</header>
+                <ul class="footer-main__list">
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">2017</a></li>
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">2016</a></li>
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">2015</a></li>
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">2014</a></li>
+                </ul>
+              </div>
+
+              <div class="footer-main__column">
+                <header>Our Partners</header>
+                <ul class="footer-main__list">
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">Google+</a></li>
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">YouTube</a></li>
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">Facebook</a></li>
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">Twitter</a></li>
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">GitHub</a></li>
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">Instagram</a></li>
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">Linked In</a></li>
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">Flickr</a></li>
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">WhatsApp</a></li>
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">Skype</a></li>
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">Pinterest</a></li>
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">Sympatia</a></li>
+                </ul>
+              </div>
+
+              <div class="footer-main__column">
+                <header>About Us</header>
+                <ul class="footer-main__list">
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">The Team</a></li>
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">Our Goals</a></li>
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">Our Vision</a></li>
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">Our Strategy</a></li>
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">Our Audience</a></li>
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">Our Tools</a></li>
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">Our Plans</a></li>
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">Pricing</a></li>
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">FAQ</a></li>
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">Services</a></li>
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">Subscription</a></li>
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">Payments</a></li>
+                </ul>
+              </div>
+
+              <div class="footer-main__column">
+                <header>Business</header>
+                <ul class="footer-main__list">
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">Partnership</a></li>
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">Affiliate</a></li>
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">Abroad</a></li>
+                </ul>
+                <header>Deals</header>
+                <ul class="footer-main__list">
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">Day deals</a><span class="testimonials__city">New</span></li>
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">Week deals</a></li>
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">Month deals</a></li>
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">Bulk deals</a></li>
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">4 for 5</a></li>
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">Reduced</a><span class="testimonials__city">New</span></li>
+                  <li class="footer-main__item"><a href="#" class="footer-main__link">Gift Card</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-12">
+          <div class="footer-main__boxes">
+            <div class="footer-main__box">
+              <header>Contact Us</header>
+              <p class="footer-main__link">Our Online Store is Open 24/7</p>
+              <p class="footer-main__link"><i class="fa fa-address-book"></i>Bedford MK42 9BX, UK</p>
+              <p class="footer-main__link">
+                <a href="phoneto:+44 1234 45 45">
+                  <i class="fa fa-phone"></i>+44 1234 45 45
+                </a>
+              </p>
+              <p class="footer-main__link">
+                <a href="mailto:customer.service@dunce.co.uk">
+                  <i class="fa fa-envelope"></i>customer.service@dunce.co.uk
+                </a>
+              </p>
+            </div>
+            <div class="footer-main__box footer-main__box--tags">
+              <header>Tags</header>
+              <a href="#" class="footer-main__tags"><span>Title<span></a>
+              <a href="#" class="footer-main__tags"><span>Author<span></a>
+              <a href="#" class="footer-main__tags"><span>Deals<span></a>
+              <a href="#" class="footer-main__tags"><span>Recommended<span></a>
+              <a href="#" class="footer-main__tags"><span>Library<span></a>
+              <a href="#" class="footer-main__tags"><span>Half-Price<span></a>
+              <a href="#" class="footer-main__tags"><span>Next Day<span></a>
+              <a href="#" class="footer-main__tags"><span>Gift<span></a>
+              <a href="#" class="footer-main__tags"><span>Love<span></a>
+              <a href="#" class="footer-main__tags"><span>Customer<span></a>
+              <a href="#" class="footer-main__tags"><span>Everyday<span></a>
+              <a href="#" class="footer-main__tags"><span>10 000 Books<span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="social-media">
+        <a href="#">
+          <svg class="footer-main__icon">
+            <use xlink:href="img/sprite.svg#icon-google-plus"></use>
+          </svg>
+        </a>
+
+        <a href="#">
+          <svg class="footer-main__icon">
+            <use xlink:href="img/sprite.svg#icon-facebook"></use>
+          </svg>
+        </a>
+
+        <a href="#">
+          <svg class="footer-main__icon">
+            <use xlink:href="img/sprite.svg#icon-instagram"></use>
+          </svg>
+        </a>
+
+        <a href="#">
+          <svg class="footer-main__icon">
+            <use xlink:href="img/sprite.svg#icon-twitter"></use>
+          </svg>
+        </a>
+
+        <a href="#">
+          <svg class="footer-main__icon">
+            <use xlink:href="img/sprite.svg#icon-github"></use>
+          </svg>
+        </a>
+
+        <a href="#">
+          <svg class="footer-main__icon">
+            <use xlink:href="img/sprite.svg#icon-soundcloud"></use>
+          </svg>
+        </a>
+
+        <a href="#">
+          <svg class="footer-main__icon">
+            <use xlink:href="img/sprite.svg#icon-linkedin"></use>
+          </svg>
+        </a>
+      </div>
+    </footer>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
